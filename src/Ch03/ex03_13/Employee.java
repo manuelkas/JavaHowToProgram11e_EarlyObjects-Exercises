@@ -16,8 +16,8 @@ public class Employee {
 
    // Employee constructor that receives three parameters
    public Employee(String firstName, String lastName, double monthlySalary) {
-      this.firstName = firstName; // asign firstName to instance variable firstName
-      this.lastName = lastName; // asign lastName to instance variable lastName
+      this.firstName = firstName; // asigns firstName to instance variable firstName
+      this.lastName = lastName; // asigns lastName to instance variable lastName
 
       // validate that the monthlySalary is greater than 0.0; if it's not,
       // instance variable monthly don't set its value.
