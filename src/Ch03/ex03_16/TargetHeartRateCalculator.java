@@ -1,7 +1,5 @@
 package Ch03.ex03_16;
 
-import java.lang.instrument.ClassDefinition;
-import java.util.Calendar;
 import java.util.Scanner;
 
 public class TargetHeartRateCalculator {
