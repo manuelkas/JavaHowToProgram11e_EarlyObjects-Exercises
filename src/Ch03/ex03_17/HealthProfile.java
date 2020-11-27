@@ -1,33 +1,23 @@
-// exercise 3.16: TargetHeartRateCalculator
-// Create a class called HeartRates. The class attributes should include
-// the person’s first name, last name and date of birth
-// (consisting of separate attributes for the month, day and year of birth).
-// Your class should have a constructor that receives this data as parameters.
-// For each attribute provide set and get methods.
-// The class also should include a method that calculates and returns the person’s age (in years),
-// a method that calculates and returns the person’s maximum heart rate and a method that calculates
-// and returns the person’s target heart rate.
-// Write a Java app that prompts for the person’s information, instantiates an object
-// of class HeartRates and prints the information from that object—including the person’s
-// first name, last name and date of birth—then calculates and prints the person’s age in (years),
-// maximum heart rate and target-heart-rate range.
-package Ch03.ex03_16;
+package Ch03.ex03_17;
 
 import java.util.Calendar;
 
-public class HeartRates {
-   private String firstName;
-   private String lastName;
-   private int monthOfBirth;
-   private int dayOfBirth;
-   private int yearOfBirth;
+public class HealthProfile {
 
-   public HeartRates(String firstName, String lastName, int monthOfBirth, int dayOfBirth, int yearOfBirth) {
+   private String firstName, lastName, gender;
+   private int monthOfBirth, dayOfBirth, yearOfBirth;
+   private double heightInCm, weightInKg;
+
+   public HealthProfile(String firstName, String lastName, String gender, int monthOfBirth,
+                        int dayOfBirth, int yearOfBirth, double heightInCm, double weightInKg) {
       this.firstName = firstName;
       this.lastName = lastName;
+      this.gender = gender;
       this.monthOfBirth = monthOfBirth;
       this.dayOfBirth = dayOfBirth;
       this.yearOfBirth = yearOfBirth;
+      this.heightInCm = heightInCm;
+      this.weightInKg = weightInKg;
    }
 
    public String getFirstName() {
@@ -44,6 +34,14 @@ public class HeartRates {
 
    public void setLastName(String lastName) {
       this.lastName = lastName;
+   }
+
+   public String getGender() {
+      return gender;
+   }
+
+   public void setGender(String gender) {
+      this.gender = gender;
    }
 
    public int getMonthOfBirth() {
@@ -70,6 +68,22 @@ public class HeartRates {
       this.yearOfBirth = yearOfBirth;
    }
 
+   public double getHeightInCm() {
+      return heightInCm;
+   }
+
+   public void setHeightInCm(double heightInCm) {
+      this.heightInCm = heightInCm;
+   }
+
+   public double getWeightInKg() {
+      return weightInKg;
+   }
+
+   public void setWeightInKg(double weightInKg) {
+      this.weightInKg = weightInKg;
+   }
+
    public int getAge(){
       int currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1;
       int currentDay = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
@@ -91,5 +105,9 @@ public class HeartRates {
 
    public String getTargetHeartRate(int maxHeartRate){
       return String.format("%.2f - %.2f", maxHeartRate * 0.50, maxHeartRate * 0.85);
+   }
+
+   public double getBMI(){
+      return weightInKg / ((heightInCm * heightInCm) / 10000);
    }
 }

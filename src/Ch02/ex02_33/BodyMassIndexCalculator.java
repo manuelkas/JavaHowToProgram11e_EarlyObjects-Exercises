@@ -39,7 +39,5 @@ public class BodyMassIndexCalculator {
          "Normal: entre 18.5 y 24.9%n" +
          "Sobrepeso: entre 25 y 29.9%n" +
          "Obeso: 30 o más");
-
-
    }
 }

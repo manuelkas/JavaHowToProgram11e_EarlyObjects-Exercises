@@ -35,8 +35,8 @@ public class TargetHeartRateCalculator {
 
       // displays person1 information
       System.out.println("Information heart rate");
-      System.out.printf("Full Name: %s%s%n", person1.getFirstName(), person1.getLastName());
-      System.out.printf("Date of birth: %d / %d / %d%n",
+      System.out.printf("Full Name: %s %s%n", person1.getFirstName(), person1.getLastName());
+      System.out.printf("Date of birth: %d/%d/%d%n",
          person1.getMonthOfBirth(), person1.getDayOfBirth(), person1.getYearOfBirth());
 
       int ageInYears = person1.getAge(); // holds call to getAge in variable
