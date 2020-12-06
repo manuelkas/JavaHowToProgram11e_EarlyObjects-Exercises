@@ -18,12 +18,13 @@ public class SidesOfATriangle {
         double c = input.nextDouble();
 
         if ((a + b) > c) {
-            double difference = (a - b);
-            if ((a - b) < 0) {
-                difference = b - a;
-            }
-            if (difference < c){
-                System.out.println("These numbers could represent the sides of a triangle.");
+            if ((a + c) > b) {
+                if ((b + c) > a) {
+                    System.out.println("These numbers could represent the sides of a triangle.");
+                }
+                else {
+                    System.out.println("These numbers could not represent the sides of a triangle.");
+                }
             }
             else {
                 System.out.println("These numbers could not represent the sides of a triangle.");
