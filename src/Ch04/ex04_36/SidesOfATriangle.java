@@ -21,16 +21,13 @@ public class SidesOfATriangle {
             if ((a + c) > b) {
                 if ((b + c) > a) {
                     System.out.println("These numbers could represent the sides of a triangle.");
-                }
-                else {
+                } else {
                     System.out.println("These numbers could not represent the sides of a triangle.");
                 }
-            }
-            else {
+            } else {
                 System.out.println("These numbers could not represent the sides of a triangle.");
             }
-        }
-        else {
+        } else {
             System.out.println("These numbers could not represent the sides of a triangle.");
         }
     }
