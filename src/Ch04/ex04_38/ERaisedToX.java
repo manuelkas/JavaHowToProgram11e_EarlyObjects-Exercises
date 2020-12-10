@@ -1,21 +1,24 @@
-// Exercise 4.38b: Econstant.java
-// Write an application that estimates the value of the mathematical
-// constant e by using the following formula. Allow the user to
-// enter the number of terms to calculate.
-// 		 e  = 1 + (1 / 1!) + (1 / 2!) + (1 / 3!) + ...
+// Write an application that computes the value of e^x by using the
+// following formula. Allow the user to enter the number of terms to
+// calculate.
+//   		e^x = 1 + (x / 1!) + (x² / 2!) + (x³ / 3!) + ...
+
 package Ch04.ex04_38;
 
 import java.util.Scanner;
 
-public class EConstant {
+public class ERaisedToX {
    public static void main(String[] args) {
 
       Scanner input = new Scanner(System.in);
 
+      System.out.print("Enter x: ");
+      int x = input.nextInt();
+
       System.out.print("Enter number of terms: ");
       int terms = input.nextInt();
 
-      double e = 1.0; // e starts at 1
+      double eToX = 1.0; // e starts at 1
       int termsCounter = 1; // the term counter is also at zero
 
       if (terms >= 1) {
@@ -26,10 +29,18 @@ public class EConstant {
                factorial *= auxCounter--; // the factorial is multiplied by aux and then subtracted 1 from aux
             }
 
-            e += 1 / factorial;
+            double result = 1.0;
+            int acc = 1;
+
+            while ( acc <= termsCounter){
+               result *= x;
+               acc++;
+            }
+
+            eToX += result / factorial;
             termsCounter++; // increases the termsCounter by 1
          }
-         System.out.printf("e = %f", e);
+         System.out.printf("e^%d = %f", x, eToX);
       }
    }
 }
