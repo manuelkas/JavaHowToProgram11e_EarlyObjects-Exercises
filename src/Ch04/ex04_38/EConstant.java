@@ -21,7 +21,7 @@ public class EConstant {
       if (terms >= 1) {
          while (termsCounter <= terms) { // only includes factorials from 1 to go through the terms from 1
             int auxCounter = termsCounter; // creates a copy of termsCounter to calculate factorial
-            double factorial = 1; // initializes the factorial value to 1, since the factorial of 0 is 1
+            double factorial = 1.0; // initializes the factorial value to 1, since the factorial of 0 is 1
             while (auxCounter > 1) { // while auxCount is greater than 1
                factorial *= auxCounter--; // the factorial is multiplied by aux and then subtracted 1 from aux
             }
