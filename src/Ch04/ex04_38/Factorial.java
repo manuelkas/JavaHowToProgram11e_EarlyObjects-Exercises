@@ -1,5 +1,5 @@
 // Exercise 4.38: Factorial.java
-// Write an application that reads a nonnegative integer and computes and prints its factorial..
+// Write an application that reads a nonnegative integer and computes and prints its factorial...
 
 package Ch04.ex04_38;
 
