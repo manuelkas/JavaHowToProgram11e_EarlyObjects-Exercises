@@ -7,12 +7,12 @@
 package Ch04.ex04_34;
 
 public class MultiplesOf2WithInfiniteLoop {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 
-      int n = 1;
-      while(n > 0){
-         n *= 2;
-         System.out.printf("%d%n", n);
-      }
-   }
+        int n = 1;
+        while (n > 0) {
+            n *= 2;
+            System.out.printf("%d%n", n);
+        }
+    }
 }

@@ -8,19 +8,19 @@ package Ch02.ex02_25;
 import java.util.Scanner;
 
 public class OddOrEven {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 
-      Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-      System.out.print("Ingresa el numero: ");
-      int number = input.nextInt();
+        System.out.print("Ingresa el numero: ");
+        int number = input.nextInt();
 
-      if (number % 2 == 0){
-         System.out.printf("%d es par", number);
-      }
+        if (number % 2 == 0) {
+            System.out.printf("%d es par", number);
+        }
 
-      if (number % 2 != 0){
-         System.out.printf("%d es impar", number);
-      }
-   }
+        if (number % 2 != 0) {
+            System.out.printf("%d es impar", number);
+        }
+    }
 }

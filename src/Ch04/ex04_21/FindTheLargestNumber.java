@@ -23,13 +23,13 @@ public class FindTheLargestNumber {
         int number = input.nextInt();
         int largest = number; // The first number will be the largest
 
-        while (counter < 10){
+        while (counter < 10) {
 
             System.out.print("Enter the number: ");
             number = input.nextInt();
             counter++;
 
-            if (number > largest){  // if the new number is larger than largest so far
+            if (number > largest) {  // if the new number is larger than largest so far
                 largest = number; // the largest now is number
             }
         }

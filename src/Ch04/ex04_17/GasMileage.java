@@ -11,28 +11,28 @@ package Ch04.ex04_17;
 import java.util.Scanner;
 
 public class GasMileage {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 
-      Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-      int totalMiles = 0;
-      int totalGallons = 0;
+        int totalMiles = 0;
+        int totalGallons = 0;
 
-      System.out.print("Enter miles for trip or -1 to quit: ");
-      int miles = input.nextInt();
+        System.out.print("Enter miles for trip or -1 to quit: ");
+        int miles = input.nextInt();
 
-      while (miles != -1){
+        while (miles != -1) {
 
-         totalMiles += miles;
-         System.out.print("Enter gallons of gas: ");
-         int gallons = input.nextInt();
-         totalGallons += gallons;
+            totalMiles += miles;
+            System.out.print("Enter gallons of gas: ");
+            int gallons = input.nextInt();
+            totalGallons += gallons;
 
-         System.out.printf("Miles per gallon on this trip: %.2f%n", (double) miles / gallons);
-         System.out.printf("Combined miles per gallon driven so far: %.2f%n%n", (double) totalMiles / totalGallons);
+            System.out.printf("Miles per gallon on this trip: %.2f%n", (double) miles / gallons);
+            System.out.printf("Combined miles per gallon driven so far: %.2f%n%n", (double) totalMiles / totalGallons);
 
-         System.out.print("Enter miles for trip or -1 to quit: ");
-         miles = input.nextInt();
-      }
-   }
+            System.out.print("Enter miles for trip or -1 to quit: ");
+            miles = input.nextInt();
+        }
+    }
 }

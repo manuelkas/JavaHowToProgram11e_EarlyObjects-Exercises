@@ -26,8 +26,7 @@ public class FindTheTwoLargestNumbers {
                 secondLargest = largest; // largest will be secondLargest and
                 largest = number; // the largest now is number
 
-            }
-            else if (number > secondLargest){
+            } else if (number > secondLargest) {
                 secondLargest = number;
             }
         }

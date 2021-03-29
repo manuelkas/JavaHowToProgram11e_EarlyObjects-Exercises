@@ -8,25 +8,25 @@ package Ch02.ex02_16;
 import java.util.Scanner;
 
 public class ComparingIntegers {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 
-      Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-      System.out.printf("Ingrese el primer entero: ");
-      int number1 = input.nextInt();
-      System.out.printf("Ingrese el segundo entero: ");
-      int number2 = input.nextInt();
+        System.out.printf("Ingrese el primer entero: ");
+        int number1 = input.nextInt();
+        System.out.printf("Ingrese el segundo entero: ");
+        int number2 = input.nextInt();
 
-      if(number1 > number2){
-         System.out.printf("%d es mas grande.%n", number1);
-      }
+        if (number1 > number2) {
+            System.out.printf("%d es mas grande.%n", number1);
+        }
 
-      if(number1 < number2){
-         System.out.printf("%d es mas grande.%n", number2);
-      }
+        if (number1 < number2) {
+            System.out.printf("%d es mas grande.%n", number2);
+        }
 
-      if(number1 == number2){
-         System.out.printf("Estos numeros son iguales.%n");
-      }
-   }
+        if (number1 == number2) {
+            System.out.printf("Estos numeros son iguales.%n");
+        }
+    }
 }

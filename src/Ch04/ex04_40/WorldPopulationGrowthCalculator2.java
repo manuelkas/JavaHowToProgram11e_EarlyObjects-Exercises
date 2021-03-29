@@ -26,24 +26,23 @@ public class WorldPopulationGrowthCalculator2 {
         r = 1 + r;
         short acc = 1;
 
-
         System.out.println("\nAP = Anticipated population at the end of year.");
         System.out.println("NI = Numerical increase.\n");
         System.out.println("Year\t AP\t\t\t\t NI\n");
         short twice = 0;
         String twiceMessage = "";
 
-        while (acc <= 75){
+        while (acc <= 75) {
             nextP = p * r;
             double numericalIncrease = nextP - p;
-            System.out.printf("%3d %15.0f %12.0f%n", acc, nextP, numericalIncrease );
+            System.out.printf("%3d %15.0f %12.0f%n", acc, nextP, numericalIncrease);
             p = nextP;
             acc++;
 
-            if (nextP >= initialP * 2){
+            if (nextP >= initialP * 2) {
                 twice++;
 
-                if (twice == 1){
+                if (twice == 1) {
                     twiceMessage = "\nThe year in which the population size will be double that of today's will be " + (2021 + acc);
                 }
             }

@@ -11,23 +11,23 @@ package Ch04.ex04_19;
 import java.util.Scanner;
 
 public class SalesCommissionCalculator {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 
-      Scanner input = new Scanner(System.in);
-      int item = 1;
+        Scanner input = new Scanner(System.in);
+        int item = 1;
 
-      System.out.printf("Enter -1 to quit or the value of item %d: ", item);
-      double itemValue = input.nextDouble();
-      double earnings = 200.0; // fixed earnings
+        System.out.printf("Enter -1 to quit or the value of item %d: ", item);
+        double itemValue = input.nextDouble();
+        double earnings = 200.0; // fixed earnings
 
-      while (itemValue != -1){
+        while (itemValue != -1) {
 
-         earnings += itemValue * 0.09;
-         item++;
-         System.out.printf("Enter -1 to quit or the value of item %d: ", item);
-         itemValue = input.nextDouble();
-      }
+            earnings += itemValue * 0.09;
+            item++;
+            System.out.printf("Enter -1 to quit or the value of item %d: ", item);
+            itemValue = input.nextDouble();
+        }
 
-      System.out.printf("Salesperson's earnings last week: %.2f%n", earnings);
-   }
+        System.out.printf("Salesperson's earnings last week: %.2f%n", earnings);
+    }
 }

@@ -21,16 +21,16 @@ package Ch02.ex02_28;
 import java.util.Scanner;
 
 public class DiameterCircumferenceAndAreaOfACircle {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 
-      Scanner input = new Scanner(System.in);
-      System.out.print("Ingrese el radio (como entero): ");
-      int r = input.nextInt();
+        Scanner input = new Scanner(System.in);
+        System.out.print("Ingrese el radio (como entero): ");
+        int r = input.nextInt();
 
-      System.out.printf("El diametro es: %d%n", r * 2);
-      System.out.printf("La circunferencia es: %f%n", 2 * Math.PI * r);
-      System.out.printf("El area es: %f%n", Math.PI * (r * r));
+        System.out.printf("El diametro es: %d%n", r * 2);
+        System.out.printf("La circunferencia es: %f%n", 2 * Math.PI * r);
+        System.out.printf("El area es: %f%n", Math.PI * (r * r));
 
 
-   }
+    }
 }

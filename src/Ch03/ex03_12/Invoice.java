@@ -13,70 +13,70 @@ package Ch03.ex03_12;
 
 public class Invoice {
 
-   private String partNumber;
-   private String description;
-   private int quantity;
-   private double price;
+    private String partNumber;
+    private String description;
+    private int quantity;
+    private double price;
 
-   // Invoice constructor that receives four parameters
-   public Invoice(String partNumber, String description, int quantity, double price) {
-      this.partNumber = partNumber;
-      this.description = description;
-      this.quantity = quantity;
-      this.price = price;
-   }
+    // Invoice constructor that receives four parameters
+    public Invoice(String partNumber, String description, int quantity, double price) {
+        this.partNumber = partNumber;
+        this.description = description;
+        this.quantity = quantity;
+        this.price = price;
+    }
 
-   // method that returns the part number
-   public String getPartNumber() {
-      return partNumber;
-   }
+    // method that returns the part number
+    public String getPartNumber() {
+        return partNumber;
+    }
 
-   // method that sets the part number
-   public void setPartNumber(String partNumber) {
-      this.partNumber = partNumber;
-   }
+    // method that sets the part number
+    public void setPartNumber(String partNumber) {
+        this.partNumber = partNumber;
+    }
 
-   // method that returns the description
-   public String getDescription() {
-      return description;
-   }
+    // method that returns the description
+    public String getDescription() {
+        return description;
+    }
 
-   // method that sets the description
-   public void setDescription(String description) {
-      this.description = description;
-   }
+    // method that sets the description
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
-   // method that returns the quantity
-   public int getQuantity() {
-      return quantity;
-   }
+    // method that returns the quantity
+    public int getQuantity() {
+        return quantity;
+    }
 
-   // method that sets the quantity
-   public void setQuantity(int quantity) {
-      this.quantity = quantity;
-   }
+    // method that sets the quantity
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 
-   // method that returns the price
-   public double getPrice() {
-      return price;
-   }
+    // method that returns the price
+    public double getPrice() {
+        return price;
+    }
 
-   // method that sets the price
-   public void setPrice(double price) {
-      this.price = price;
-   }
+    // method that sets the price
+    public void setPrice(double price) {
+        this.price = price;
+    }
 
-   // method that returns the invoice amount
-   public double getInvoiceAmount() {
+    // method that returns the invoice amount
+    public double getInvoiceAmount() {
 
-      if (quantity < 0) {
-         quantity = 0;
-      }
+        if (quantity < 0) {
+            quantity = 0;
+        }
 
-      if (price < 0) {
-         price = 0.0;
-      }
+        if (price < 0) {
+            price = 0.0;
+        }
 
-      return price * quantity;
-   }
+        return price * quantity;
+    }
 }

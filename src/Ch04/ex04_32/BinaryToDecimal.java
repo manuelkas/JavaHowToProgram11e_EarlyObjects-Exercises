@@ -13,40 +13,40 @@ package Ch04.ex04_32;
 import java.util.Scanner;
 
 public class BinaryToDecimal {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 
-      Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-      System.out.print("Enter the number: ");
-      int binary = input.nextInt();
+        System.out.print("Enter the number: ");
+        int binary = input.nextInt();
 
-      int position = 0; // saves the position of the end at the beginning of the binary number
-      int decimal = 0; // will save the number in decimal
+        int position = 0; // saves the position of the end at the beginning of the binary number
+        int decimal = 0; // will save the number in decimal
 
-      // If there is still a number to operate with, greater than zero
-      while (binary > 0){
-         int digit = binary % 10; // saves the last digit to operate with it
-         binary /= 10; // updates the value of the current one by dividing it by 10
+        // If there is still a number to operate with, greater than zero
+        while (binary > 0) {
+            int digit = binary % 10; // saves the last digit to operate with it
+            binary /= 10; // updates the value of the current one by dividing it by 10
 
-         // will save the results of the power operations of two,
-         // it is necessary that it is initialized in one because if it is in zero,
-         // it will always be multiplied by zero, giving zero in almost all the results
-         int result = 1;
+            // will save the results of the power operations of two,
+            // it is necessary that it is initialized in one because if it is in zero,
+            // it will always be multiplied by zero, giving zero in almost all the results
+            int result = 1;
 
-         // If it is the 0 position from right to left, that is, the last digit of the binary
-         if (position == 0){
-            result = digit; // then the result is equal to the digit there
-         }
+            // If it is the 0 position from right to left, that is, the last digit of the binary
+            if (position == 0) {
+                result = digit; // then the result is equal to the digit there
+            }
 
 
-         int i = 0; // variable to iterating
-         while(i < position ){ // perform calculation of raising the digit * 2 to the position
-            result *= digit * 2;
-            i++; // increases the variable to continue iterating or stop
-         }
-         position++; // increases position
-         decimal += result; // adds result to decimal value
-      }
-      System.out.printf("decimal = %d%n", decimal);
-   }
+            int i = 0; // variable to iterating
+            while (i < position) { // perform calculation of raising the digit * 2 to the position
+                result *= digit * 2;
+                i++; // increases the variable to continue iterating or stop
+            }
+            position++; // increases position
+            decimal += result; // adds result to decimal value
+        }
+        System.out.printf("decimal = %d%n", decimal);
+    }
 }

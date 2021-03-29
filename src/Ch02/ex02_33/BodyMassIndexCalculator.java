@@ -21,23 +21,23 @@ package Ch02.ex02_33;
 import java.util.Scanner;
 
 public class BodyMassIndexCalculator {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 
-      Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-      System.out.print("Ingrese el peso en kg: ");
-      int weightInKilograms = input.nextInt();
+        System.out.print("Ingrese el peso en kg: ");
+        int weightInKilograms = input.nextInt();
 
-      System.out.print("Ingrese la altura en metros: ");
-      double heightInMeters = input.nextDouble();
+        System.out.print("Ingrese la altura en metros: ");
+        double heightInMeters = input.nextDouble();
 
-      double bmi = weightInKilograms / (heightInMeters * heightInMeters);
+        double bmi = weightInKilograms / (heightInMeters * heightInMeters);
 
-      System.out.printf("%nSu indice de masa corporal es %f%n", bmi);
-      System.out.printf("%nVALORES DE BMI%n" +
-         "Bajo peso: menos de 18.5%n" +
-         "Normal: entre 18.5 y 24.9%n" +
-         "Sobrepeso: entre 25 y 29.9%n" +
-         "Obeso: 30 o más");
-   }
+        System.out.printf("%nSu indice de masa corporal es %f%n", bmi);
+        System.out.printf("%nVALORES DE BMI%n" +
+                "Bajo peso: menos de 18.5%n" +
+                "Normal: entre 18.5 y 24.9%n" +
+                "Sobrepeso: entre 25 y 29.9%n" +
+                "Obeso: 30 o más");
+    }
 }

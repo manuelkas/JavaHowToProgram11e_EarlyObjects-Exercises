@@ -14,16 +14,16 @@
 package Ch02.ex02_18;
 
 public class DisplayingShapesWithAsterisks {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 
-      System.out.println("*********   ***     *       *");
-      System.out.println("*       *  *   *   ***     * *");
-      System.out.println("*       * *     * *****   *   *");
-      System.out.println("*       * *     *   *    *     *");
-      System.out.println("*       * *     *   *   *       *");
-      System.out.println("*       * *     *   *    *     *");
-      System.out.println("*       * *     *   *     *   *");
-      System.out.println("*       *  *   *    *      * *");
-      System.out.println("*********   ***     *       *");
-   }
+        System.out.println("*********   ***     *       *");
+        System.out.println("*       *  *   *   ***     * *");
+        System.out.println("*       * *     * *****   *   *");
+        System.out.println("*       * *     *   *    *     *");
+        System.out.println("*       * *     *   *   *       *");
+        System.out.println("*       * *     *   *    *     *");
+        System.out.println("*       * *     *   *     *   *");
+        System.out.println("*       *  *   *    *      * *");
+        System.out.println("*********   ***     *       *");
+    }
 }

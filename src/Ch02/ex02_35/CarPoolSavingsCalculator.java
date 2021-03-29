@@ -14,23 +14,23 @@ package Ch02.ex02_35;
 import java.util.Scanner;
 
 public class CarPoolSavingsCalculator {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 
-      Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-      System.out.print("Total de km conducidos por dia?: ");
-      float kmDriven = input.nextFloat();
-      System.out.print("Costo por litro de gasolina?: ");
-      float costLGas = input.nextFloat();
-      System.out.print("Promedio de km por litro?: ");
-      float kmL = input.nextFloat();
-      System.out.print("Cuota de estacionamiento por dia?: ");
-      float parkingFees = input.nextFloat();
-      System.out.print("Peaje por dia?: ");
-      float toll = input.nextFloat();
+        System.out.print("Total de km conducidos por dia?: ");
+        float kmDriven = input.nextFloat();
+        System.out.print("Costo por litro de gasolina?: ");
+        float costLGas = input.nextFloat();
+        System.out.print("Promedio de km por litro?: ");
+        float kmL = input.nextFloat();
+        System.out.print("Cuota de estacionamiento por dia?: ");
+        float parkingFees = input.nextFloat();
+        System.out.print("Peaje por dia?: ");
+        float toll = input.nextFloat();
 
-      float drivingCost = kmDriven * (costLGas / kmL) + parkingFees + toll;
+        float drivingCost = kmDriven * (costLGas / kmL) + parkingFees + toll;
 
-      System.out.printf("El costo de manejar por un dia es: %.2f%n", drivingCost);
-   }
+        System.out.printf("El costo de manejar por un dia es: %.2f%n", drivingCost);
+    }
 }

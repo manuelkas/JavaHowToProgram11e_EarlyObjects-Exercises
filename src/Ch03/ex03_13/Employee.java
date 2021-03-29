@@ -10,47 +10,47 @@
 package Ch03.ex03_13;
 
 public class Employee {
-   private String firstName;  // instance variable
-   private String lastName;  // instance variable
-   private double monthlySalary;  // instance variable
+    private String firstName;  // instance variable
+    private String lastName;  // instance variable
+    private double monthlySalary;  // instance variable
 
-   // Employee constructor that receives three parameters
-   public Employee(String firstName, String lastName, double monthlySalary) {
-      this.firstName = firstName; // asigns firstName to instance variable firstName
-      this.lastName = lastName; // asigns lastName to instance variable lastName
+    // Employee constructor that receives three parameters
+    public Employee(String firstName, String lastName, double monthlySalary) {
+        this.firstName = firstName; // asigns firstName to instance variable firstName
+        this.lastName = lastName; // asigns lastName to instance variable lastName
 
-      // validate that the monthlySalary is greater than 0.0; if it's not,
-      // instance variable monthly don't set its value.
-      if (monthlySalary > 0.0){
-         this.monthlySalary = monthlySalary;
-      }
-   }
+        // validate that the monthlySalary is greater than 0.0; if it's not,
+        // instance variable monthly don't set its value.
+        if (monthlySalary > 0.0) {
+            this.monthlySalary = monthlySalary;
+        }
+    }
 
-   public String getFirstName() {
-      return firstName;
-   }
+    public String getFirstName() {
+        return firstName;
+    }
 
-   public void setFirstName(String firstName) {
-      this.firstName = firstName;
-   }
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
-   public String getLastName() {
-      return lastName;
-   }
+    public String getLastName() {
+        return lastName;
+    }
 
-   public void setLastName(String lastName) {
-      this.lastName = lastName;
-   }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
-   public double getMonthlySalary() {
-      return monthlySalary;
-   }
+    public double getMonthlySalary() {
+        return monthlySalary;
+    }
 
-   public void setMonthlySalary(double monthlySalary) {
-      // validate that the monthlySalary is greater than 0.0; if it's not,
-      // instance variable monthly don't set its value.
-      if (monthlySalary > 0.0){
-         this.monthlySalary = monthlySalary;
-      }
-   }
+    public void setMonthlySalary(double monthlySalary) {
+        // validate that the monthlySalary is greater than 0.0; if it's not,
+        // instance variable monthly don't set its value.
+        if (monthlySalary > 0.0) {
+            this.monthlySalary = monthlySalary;
+        }
+    }
 }

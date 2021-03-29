@@ -15,7 +15,7 @@ public class SalaryCalculator {
         Scanner input = new Scanner(System.in);
         int n = 1;
 
-        while (n <= 3){
+        while (n <= 3) {
 
             System.out.print("Enter hourly wage rate: ");
             double rate = input.nextDouble();
@@ -25,10 +25,9 @@ public class SalaryCalculator {
 
             System.out.printf("the employee%d's salary is: ", n);
 
-            if (hours <= 40){
+            if (hours <= 40) {
                 System.out.printf("Total earnings: $%.2f%n", hours * rate);
-            }
-            else {
+            } else {
                 System.out.printf("Total earnings: $%.2f%n", (40 * rate) + ((hours - 40) * (rate * 1.5)));
             }
 

@@ -19,20 +19,20 @@
 package Ch04.ex04_33;
 
 public class CheckerboardPatternOfAsterisks {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 
-      int i = 0;
+        int i = 0;
 
-      while (i++ < 8) {
-         int j = 0;
-         while (j++ < 8) {
-            System.out.print("* ");
-         }
+        while (i++ < 8) {
+            int j = 0;
+            while (j++ < 8) {
+                System.out.print("* ");
+            }
 
-         System.out.println();
-         if (i % 2 == 1) {
-            System.out.print(" ");
-         }
-      }
-   }
+            System.out.println();
+            if (i % 2 == 1) {
+                System.out.print(" ");
+            }
+        }
+    }
 }

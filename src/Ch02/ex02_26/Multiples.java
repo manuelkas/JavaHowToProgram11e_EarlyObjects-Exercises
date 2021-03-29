@@ -6,22 +6,22 @@ package Ch02.ex02_26;
 import java.util.Scanner;
 
 public class Multiples {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 
-      Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-      System.out.print("Ingrese el primer entero: ");
-      int number1 = input.nextInt();
+        System.out.print("Ingrese el primer entero: ");
+        int number1 = input.nextInt();
 
-      System.out.print("Ingrese el segundo entero: ");
-      int number2 = input.nextInt();
+        System.out.print("Ingrese el segundo entero: ");
+        int number2 = input.nextInt();
 
-      if (number1 % number2 == 0){
-         System.out.printf("%d es multiplo de %d%n", number1, number2);
-      }
+        if (number1 % number2 == 0) {
+            System.out.printf("%d es multiplo de %d%n", number1, number2);
+        }
 
-      if (number1 % number2 != 0){
-         System.out.printf("%d no es multiplo de %d%n", number1, number2);
-      }
-   }
+        if (number1 % number2 != 0) {
+            System.out.printf("%d no es multiplo de %d%n", number1, number2);
+        }
+    }
 }

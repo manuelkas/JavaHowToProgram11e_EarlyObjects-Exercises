@@ -19,35 +19,35 @@ package Ch04.ex04_18;
 import java.util.Scanner;
 
 public class CreditLimitCalculator {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 
-      Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-      System.out.println("Enter customer account information");
-      System.out.print("Account number or -1 to quit: ");
-      int accountNumber = input.nextInt();
+        System.out.println("Enter customer account information");
+        System.out.print("Account number or -1 to quit: ");
+        int accountNumber = input.nextInt();
 
-      while (accountNumber != -1){
-         System.out.print("Balance at the beginning of the month: $");
-         int initialBalance = input.nextInt();
-         System.out.print("Total of items charged this month: $");
-         int totalCharged = input.nextInt();
-         System.out.print("Total of credits applied this month: $");
-         int totalCredits = input.nextInt();
-         System.out.print("Allowed credit limit: $");
-         int creditLimit = input.nextInt();
+        while (accountNumber != -1) {
+            System.out.print("Balance at the beginning of the month: $");
+            int initialBalance = input.nextInt();
+            System.out.print("Total of items charged this month: $");
+            int totalCharged = input.nextInt();
+            System.out.print("Total of credits applied this month: $");
+            int totalCredits = input.nextInt();
+            System.out.print("Allowed credit limit: $");
+            int creditLimit = input.nextInt();
 
-         int newBalance = initialBalance + totalCharged - totalCredits;
+            int newBalance = initialBalance + totalCharged - totalCredits;
 
-         System.out.printf("The new balance is: $%d%n ", newBalance);
+            System.out.printf("The new balance is: $%d%n ", newBalance);
 
-         if (newBalance > creditLimit){
-            System.out.println("Credit limit exceeded");
-         }
+            if (newBalance > creditLimit) {
+                System.out.println("Credit limit exceeded");
+            }
 
-         System.out.println("Enter customer account information");
-         System.out.print("Account number or -1 to quit: ");
-         accountNumber = input.nextInt();
-      }
-   }
+            System.out.println("Enter customer account information");
+            System.out.print("Account number or -1 to quit: ");
+            accountNumber = input.nextInt();
+        }
+    }
 }

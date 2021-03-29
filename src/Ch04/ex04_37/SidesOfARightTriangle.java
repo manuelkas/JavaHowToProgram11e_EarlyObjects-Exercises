@@ -21,14 +21,11 @@ public class SidesOfARightTriangle {
                 if ((b + c) > a) {
                     if ((a * a) == (b * b) + (c * c)) {
                         System.out.println("These numbers could represent the sides of a right triangle.");
-                    }
-                    else if ((b * b) == (a * a) + (c * c)){
+                    } else if ((b * b) == (a * a) + (c * c)) {
                         System.out.println("These numbers could represent the sides of a right triangle.");
-                    }
-                    else if ((c * c) == ( a * a) + (b * b)){
+                    } else if ((c * c) == (a * a) + (b * b)) {
                         System.out.println("These numbers could represent the sides of a right triangle.");
-                    }
-                    else {
+                    } else {
                         System.out.println("These numbers could not represent the sides of a triangle.");
                     }
                 } else {
