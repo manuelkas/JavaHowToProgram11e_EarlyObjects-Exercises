@@ -9,7 +9,7 @@ public class ModifiedAutoPolicyClassTest {
         ModifiedAutoPolicyClass policy2 =
                 new ModifiedAutoPolicyClass(22222222, "Ford Fusion", "ME");
 
-        // add this object to test the the change in setState method
+        // add this object to test the change in setState method
         ModifiedAutoPolicyClass policy3 =
                 new ModifiedAutoPolicyClass(33333, "Ford Fusion", "NJ");
 
@@ -24,7 +24,7 @@ public class ModifiedAutoPolicyClassTest {
     }
 
     // method that displays whether an ModifiedAutoPolicyClass
-    // is in a state with no-fault auto insurance
+    // is in a state with no-fault auto insurance. All right.
     public static void policyInNoFaultState(ModifiedAutoPolicyClass policy) {
         System.out.println("The auto policy:");
         System.out.printf(
