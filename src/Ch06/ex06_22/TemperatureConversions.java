@@ -19,22 +19,22 @@ public class TemperatureConversions {
 
         do {
             System.out.printf("Do you want to convert from: " +
-                    "%n1. ªF to ªC" +
-                    "%n2. ªC to ªF%n" +
+                    "%n1. ºF to ºC" +
+                    "%n2. ºC to ºF%n" +
                     "?__");
             option = input.nextByte();
         } while(1 > option || 2 < option);
 
 
         if (option == 1){
-            System.out.print("ªF: ");
+            System.out.print("ºF: ");
             double x = input.nextDouble();
-            System.out.printf("%.2f ªC", celsius(x));
+            System.out.printf("%.2f ºC", celsius(x));
         }
         else {
-            System.out.print("ªC: ");
+            System.out.print("ºC: ");
             double x = input.nextDouble();
-            System.out.printf("%.2f ªF", fahrenheit(x));
+            System.out.printf("%.2f ºF", fahrenheit(x));
         }
     }
 
